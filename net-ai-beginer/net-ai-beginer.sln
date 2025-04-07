@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work-with-local-model", "work-with-local-model\work-with-local-model.csproj", "{6C76FDB5-9DDA-479E-85ED-3E79B365E775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net-chat-app-sample", "net-chat-app-sample\net-chat-app-sample.csproj", "{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C76FDB5-9DDA-479E-85ED-3E79B365E775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C76FDB5-9DDA-479E-85ED-3E79B365E775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C76FDB5-9DDA-479E-85ED-3E79B365E775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C76FDB5-9DDA-479E-85ED-3E79B365E775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A23F1B74-4C0A-4C39-8F0A-25CFA4D2A02F}
+	EndGlobalSection
+EndGlobal
