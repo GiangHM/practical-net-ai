@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work-with-local-model", "wo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net-chat-app-sample", "net-chat-app-sample\net-chat-app-sample.csproj", "{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semantic-kernel-chat-completion", "semantic-kernel-chat-completion\semantic-kernel-chat-completion.csproj", "{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
