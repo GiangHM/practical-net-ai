@@ -10,7 +10,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chat-completion-ollama-MEAI", "chat-completion-ollama-MEAI\chat-completion-ollama-MEAI.csproj", "{FEE64E71-EC0F-4B4B-B557-6B9DD1D1F7FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "functioncalling-localfunction", "functioncalling-localfunction\functioncalling-localfunction.csproj", "{2071FEB5-DBFC-417A-A834-F7B36A911F48}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semantic-kernel-chat-completion", "semantic-kernel-chat-completion\semantic-kernel-chat-completion.csproj", "{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWeatherApi", "SampleWeatherApi\SampleWeatherApi.csproj", "{92488D4A-9875-42E2-91F9-DB6E69B09FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "functioncalling-api", "functioncalling-api\functioncalling-api.csproj", "{475F6B25-FBE1-4D95-8D34-F802E2F95DCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +39,18 @@ Global
 		{2071FEB5-DBFC-417A-A834-F7B36A911F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2071FEB5-DBFC-417A-A834-F7B36A911F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2071FEB5-DBFC-417A-A834-F7B36A911F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92488D4A-9875-42E2-91F9-DB6E69B09FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92488D4A-9875-42E2-91F9-DB6E69B09FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92488D4A-9875-42E2-91F9-DB6E69B09FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92488D4A-9875-42E2-91F9-DB6E69B09FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{475F6B25-FBE1-4D95-8D34-F802E2F95DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475F6B25-FBE1-4D95-8D34-F802E2F95DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475F6B25-FBE1-4D95-8D34-F802E2F95DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475F6B25-FBE1-4D95-8D34-F802E2F95DCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
