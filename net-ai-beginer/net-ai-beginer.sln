@@ -10,6 +10,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chat-completion-ollama-MEAI", "chat-completion-ollama-MEAI\chat-completion-ollama-MEAI.csproj", "{FEE64E71-EC0F-4B4B-B557-6B9DD1D1F7FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "functioncalling-localfunction", "functioncalling-localfunction\functioncalling-localfunction.csproj", "{2071FEB5-DBFC-417A-A834-F7B36A911F48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semantic-kernel-chat-completion", "semantic-kernel-chat-completion\semantic-kernel-chat-completion.csproj", "{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
