@@ -18,7 +18,7 @@ TracerProvider tracerProvide = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
     .Build();
 
 IChatClient chatClient = new ChatCompletionsClient(endpoint: new Uri("https://models.inference.ai.azure.com")
-    , new AzureKeyCredential("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"))
+    , new AzureKeyCredential(""))
     .AsChatClient("gpt-4o-mini")
     .AsBuilder()
     //.UseLogging(factory)
