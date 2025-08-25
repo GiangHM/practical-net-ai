@@ -24,6 +24,7 @@ var systemMessage = new ChatMessage(ChatRole.System,
     "1. Name of the player" +
     "2. When was the player born?" );
 
+chatHistory.Add(systemMessage);
 while (true)
 {
     Console.Write("Q: ");
