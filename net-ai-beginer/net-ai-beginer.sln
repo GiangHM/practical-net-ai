@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work-with-local-model-OllamaSK", "work-with-local-model\work-with-local-model-OllamaSK.csproj", "{6C76FDB5-9DDA-479E-85ED-3E79B365E775}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work-with-local-model-sk-ollama", "work-with-local-model\work-with-local-model-sk-ollama.csproj", "{6C76FDB5-9DDA-479E-85ED-3E79B365E775}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net-chat-app-sample", "net-chat-app-sample\net-chat-app-sample.csproj", "{844A6ABD-2C45-715B-ADA7-B2FE05D5DD38}"
 EndProject
@@ -11,17 +11,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chat-completion-ollama-MEAI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "functioncalling-localfunction", "functioncalling-localfunction\functioncalling-localfunction.csproj", "{2071FEB5-DBFC-417A-A834-F7B36A911F48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semantic-kernel-chat-completion", "semantic-kernel-chat-completion\semantic-kernel-chat-completion.csproj", "{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chatcompletion-sk-ollama", "semantic-kernel-chat-completion\chatcompletion-sk-ollama.csproj", "{0B3A06D4-8912-4344-9924-6B64A6A6CC7C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWeatherApi", "SampleWeatherApi\SampleWeatherApi.csproj", "{92488D4A-9875-42E2-91F9-DB6E69B09FA3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "functioncalling-api", "functioncalling-api\functioncalling-api.csproj", "{475F6B25-FBE1-4D95-8D34-F802E2F95DCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAG-sample-1", "RAG-sample-1\RAG-sample-1.csproj", "{9221F05C-3B1C-4F9A-91BB-46673E9683E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rag-sample-with-sk-ollama", "RAG-sample-1\rag-sample-with-sk-ollama.csproj", "{9221F05C-3B1C-4F9A-91BB-46673E9683E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionSample", "VisionSample\VisionSample.csproj", "{CCA533CE-8A3E-403E-9176-6B0B903AA341}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "practice-sk-azurefoundrylocal", "practice-sk-azurefoundrylocal\practice-sk-azurefoundrylocal.csproj", "{05C59777-F10F-4D0B-A9C0-DBFF945543B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "practice-chatcompletion-sk-foundrylocal", "practice-sk-azurefoundrylocal\practice-chatcompletion-sk-foundrylocal.csproj", "{05C59777-F10F-4D0B-A9C0-DBFF945543B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MEAI", "MEAI", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "semanti-kernel", "semanti-kernel", "{95F6712E-8786-4288-80EC-851EF76EF8EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +76,16 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C76FDB5-9DDA-479E-85ED-3E79B365E775} = {95F6712E-8786-4288-80EC-851EF76EF8EB}
+		{FEE64E71-EC0F-4B4B-B557-6B9DD1D1F7FD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2071FEB5-DBFC-417A-A834-F7B36A911F48} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0B3A06D4-8912-4344-9924-6B64A6A6CC7C} = {95F6712E-8786-4288-80EC-851EF76EF8EB}
+		{475F6B25-FBE1-4D95-8D34-F802E2F95DCA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9221F05C-3B1C-4F9A-91BB-46673E9683E0} = {95F6712E-8786-4288-80EC-851EF76EF8EB}
+		{CCA533CE-8A3E-403E-9176-6B0B903AA341} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{05C59777-F10F-4D0B-A9C0-DBFF945543B7} = {95F6712E-8786-4288-80EC-851EF76EF8EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A23F1B74-4C0A-4C39-8F0A-25CFA4D2A02F}
