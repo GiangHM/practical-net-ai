@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MEAI", "MEAI", "{02EA681E-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "semanti-kernel", "semanti-kernel", "{95F6712E-8786-4288-80EC-851EF76EF8EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "practice-sk-plugins-foundrylocal", "practice-sk-plugins-foundrylocal\practice-sk-plugins-foundrylocal.csproj", "{1AEB7959-B1C9-425B-8C2F-A8422870F26E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{05C59777-F10F-4D0B-A9C0-DBFF945543B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05C59777-F10F-4D0B-A9C0-DBFF945543B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05C59777-F10F-4D0B-A9C0-DBFF945543B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEB7959-B1C9-425B-8C2F-A8422870F26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEB7959-B1C9-425B-8C2F-A8422870F26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEB7959-B1C9-425B-8C2F-A8422870F26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEB7959-B1C9-425B-8C2F-A8422870F26E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{9221F05C-3B1C-4F9A-91BB-46673E9683E0} = {95F6712E-8786-4288-80EC-851EF76EF8EB}
 		{CCA533CE-8A3E-403E-9176-6B0B903AA341} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{05C59777-F10F-4D0B-A9C0-DBFF945543B7} = {95F6712E-8786-4288-80EC-851EF76EF8EB}
+		{1AEB7959-B1C9-425B-8C2F-A8422870F26E} = {95F6712E-8786-4288-80EC-851EF76EF8EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A23F1B74-4C0A-4C39-8F0A-25CFA4D2A02F}
