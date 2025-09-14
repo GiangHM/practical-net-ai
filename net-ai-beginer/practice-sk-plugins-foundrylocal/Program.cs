@@ -76,7 +76,6 @@ var builder = Kernel.CreateBuilder();
 
 // Add plugins to kernel
 builder.Plugins.AddFromType<FlightBookingPlugin>("FlightBookingPlugin");
-
 // Add OpenAI chat completion service to kernel
 builder.AddOpenAIChatCompletion(modelId
     , new OpenAIClient(
@@ -85,6 +84,7 @@ builder.AddOpenAIChatCompletion(modelId
     );
 
 var kernel = builder.Build();
+kernel.FunctionInvocationFilters.Add(new PermissionFilter());
 
 // Add plugins to kernel
 KernelFunction searchFlights = kernel.Plugins.GetFunction("FlightBookingPlugin", "search_flights");
@@ -130,4 +130,39 @@ void AddUserMessage(string msg)
 {
     Console.WriteLine("User: " + msg);
     history.AddUserMessage(msg);
+}
+
+
+/// <summary>
+/// This class is to demonstrate how to create a function invocation filter
+/// </summary>
+public class PermissionFilter : IFunctionInvocationFilter
+{
+    public async Task OnFunctionInvocationAsync(FunctionInvocationContext context, Func<FunctionInvocationContext, Task> next)
+    {
+        if(!HasUserPermission(context.Function.PluginName, context.Function.Name))
+        {
+            context.Result = new FunctionResult(context.Result, "The operation was not approved by the user");
+            return;
+        }
+        await next(context);
+    }
+
+
+    private Boolean HasUserPermission(string pluginName, string functionName)
+    {
+        if (pluginName.Equals("FlightBookingPlugin") && functionName.Equals("book_flight"))
+        {
+            Console.WriteLine("System Message: The agent requires an approval to complete this operation. Do you approve (Y/N)");
+            Console.Write("User: ");
+            string shouldProceed = Console.ReadLine()!;
+
+            if (shouldProceed != "Y")
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
