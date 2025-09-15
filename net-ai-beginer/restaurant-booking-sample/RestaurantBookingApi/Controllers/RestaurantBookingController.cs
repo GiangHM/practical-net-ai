@@ -49,5 +49,20 @@ namespace RestaurantBookingApi.Controllers
                 return StatusCode(500, "An error occurred while reserving the table.");
             }
         }
+
+        [HttpGet("GetReservedTable")]
+        public async Task<IActionResult> GetReservedTable() {
+            try
+            {
+                var reservations = await _reservationService.GetAllReservationsAsync();
+                return Ok(reservations);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving reservations.");
+                return StatusCode(500, "An error occurred while retrieving reservations.");
+            }
+        }
+
     }
 }

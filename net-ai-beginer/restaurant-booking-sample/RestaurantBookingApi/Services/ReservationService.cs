@@ -7,6 +7,7 @@ namespace RestaurantBookingApi.Services
     public interface IReservationService
     {
         Task<string> ReserveTableAsync(ReserveTableRequest request);
+        Task<List<ReservationResponse>> GetAllReservationsAsync();
     }
     public class ReservationService(BookingDataContext _context) : IReservationService
     {
@@ -42,6 +43,22 @@ namespace RestaurantBookingApi.Services
             await _context.SaveChangesAsync();
 
             return $"Table {request.TableId} reserved successfully for {request.ReservationTime}.";
+        }
+
+        public async Task<List<ReservationResponse>> GetAllReservationsAsync()
+        {
+            return await _context.Bookings
+                .Include(b => b.Table)
+                .Select(b => new ReservationResponse
+                {
+                    Id = b.Id,
+                    TableNumber = b.Table != null ? b.Table.Number : 0,
+                    ReservationTime = b.ReservationTime,
+                    NumberOfPeople = b.NumberOfPeople,
+                    CustomerName = b.CustomerName,
+                    CustomerPhone = b.CustomerPhone
+                })
+                .ToListAsync();
         }
     }
 }
