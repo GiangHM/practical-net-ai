@@ -1,11 +1,13 @@
-﻿using FlowerShop.Domain.Interfaces;
-using FlowerShop.Infrastructure.Persistence;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+﻿using FlowerShop.Application.Dtos;
 using FlowerShop.Application.Features.Flowers.Queries;
-using FlowerShop.Application.Dtos;
+using FlowerShop.Application.Interfaces;
+using FlowerShop.Domain.Interfaces;
+using FlowerShop.Infrastructure.Persistence;
+using FlowerShop.Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 namespace FlowerShop.Infrastructure.Configurations
 {
     public static class DependencyInjection
@@ -32,6 +34,7 @@ namespace FlowerShop.Infrastructure.Configurations
             // Register repositories
             services.AddScoped<IFlowerResponsitory, FlowerRespository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IFlowerService, FlowerService>();
 
             return services;
         }
@@ -39,7 +42,7 @@ namespace FlowerShop.Infrastructure.Configurations
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
 
-            services.AddTransient<IFlowerGetAllHandler<int, IEnumerable<FlowerResponseItem>>, FlowerGetAll>();
+            services.AddTransient<IFlowerGetAllHandler<IEnumerable<FlowerResponseItem>>, FlowerGetAll>();
             return services;
         }
     }

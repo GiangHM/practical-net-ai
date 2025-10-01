@@ -280,3 +280,6 @@ Bollore.Tom.API.Authorization/healthchecksdb-shm
 Bollore.Tom.API.Authorization/healthchecksdb-wal
 /Samples/ArticleManagementAPI/Properties/PublishProfiles
 /Samples/ArticleManagementAPI/Properties/ServiceDependencies/vic-demo-app - Zip Deploy
+net-ai-beginer/restaurant-booking-sample/RestaurantBookingApi/appsettings.Development.json
+flowershop/flowershopbackend/FlowerShop.Api/appsettings.Development.json
+flowershop/flowershopbackend/FlowerShop.Api/appsettings.Development.json

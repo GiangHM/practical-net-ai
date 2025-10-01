@@ -8,6 +8,7 @@ namespace FlowerShop.Domain.ValueObject
 {
     public class EffectiveDate
     {
+        public EffectiveDate() { }
         public DateTime From { get; set; }
         public DateTime To { get; set; }
         public EffectiveDate(DateTime fromDate, DateTime toDate)

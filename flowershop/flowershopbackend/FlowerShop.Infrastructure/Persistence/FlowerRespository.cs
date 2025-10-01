@@ -25,9 +25,9 @@ namespace FlowerShop.Infrastructure.Persistence
         public async Task<IEnumerable<Flower>> GetAllAsync()
         {
             return await _context.Flowers
-           .Include(o => o.CategoryId)
-           .Include(o => o.UnitPrice)
-           .ToListAsync();
+                .Include(o => o.UnitPrice)
+                .Include(o => o.CategoryId)
+                .ToListAsync();
         }
 
         public Task<Flower?> GetByIdAsync(int id)

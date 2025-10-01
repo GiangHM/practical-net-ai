@@ -13,7 +13,6 @@ namespace FlowerShop.Infrastructure.Persistence
         public DbSet<Flower> Flowers { get; set; } = null!;
         public DbSet<FlowerPricing> FlowerPrices { get; set; } = null!;
         public DbSet<FlowerStock> FlowerStocks { get; set; } = null!;
-        public object Orders { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -61,11 +60,9 @@ namespace FlowerShop.Infrastructure.Persistence
                 entity.OwnsOne(e => e.PriceEffective, effect =>
                 {
                     effect.Property(m => m.From)
-                        .HasColumnName("FromDate")
-                        .HasPrecision(18, 2);
+                        .HasColumnName("FromDate");
                     effect.Property(m => m.To)
-                        .HasColumnName("ToDate")
-                        .HasMaxLength(3);
+                        .HasColumnName("ToDate");
                 });
             });
 
@@ -78,8 +75,9 @@ namespace FlowerShop.Infrastructure.Persistence
                 entity.HasOne<Flower>()
                       .WithOne(e => e.Stock);
 
-                
+
             });
+
         }
     }
 }
